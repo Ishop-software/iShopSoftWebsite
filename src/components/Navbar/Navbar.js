@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Navbar.css";
 import {
   AppBar, Box, Button, CssBaseline, Divider, Drawer, IconButton,
   List, ListItem, ListItemButton, ListItemText, Toolbar, Typography
@@ -38,7 +39,7 @@ function Navbar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar className="menu-appbar" component="nav">
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           <Typography
             variant="h6"

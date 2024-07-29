@@ -31,12 +31,12 @@ const portfolioList = [
 
 function Portfolio() {
   return (
-    <Box className="container">
+    <Box className="portfolio-container">
         <Typography variant="h4" className="portfolio-title">Portfolios</Typography>
-        <Box className="grid-container">
+        <Box className="portfolio-flexbox">
             {portfolioList.map((item, index) => (
-                <Card key={index} className="portfolio-card">
-                    <CardMedia
+                <Card key={index} className="portfolio-cardsection">
+                    <CardMedia className="portfolio-imgsection"
                         component="img"
                         alt="portfolio image"
                         height="140"
