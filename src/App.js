@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css'
+import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../src/Pages/Home/Home';
 import About from '../src/Pages/About/About';
@@ -22,13 +22,6 @@ function App() {
         <Route exact path='/portfolio' element={<Portfolio />} />
         <Route exact path='/contactus' element={<ContactUs />} />
       </Routes>
-
-      <Home />
-      <About />
-      <Service />
-      <Product />
-      <Portfolio />
-      <ContactUs />
       <Footer />
     </BrowserRouter>
   );
