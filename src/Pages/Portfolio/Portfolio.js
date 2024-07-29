@@ -9,7 +9,7 @@ import imgfour from "../../Assets/PortfolioImages/imgfour.png";
 const portfolioList = [
     {
         image: imgfirst,
-        title: "Computer Services",
+        title: "Web Design",
         para: "Lizards are a widespread group of squamate reptiles, with over 6000 species, ranging across all continents except Antarctica"
     },
     {
