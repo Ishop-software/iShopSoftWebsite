@@ -10,11 +10,15 @@ import { Typography } from '@material-ui/core';
 function ServiceCard({ title, description, image }) {
   return (
 
-    <div className="service-card">
+    <div className="service-card" >
       <img className='service-image' src={image}></img>
-      <h2 className="service-title">{title}</h2>
+      <h2 className="service-title" >{title}</h2>
       <p className="service-description">{description}</p>
+
     </div>
+
+
+
   )
 }
 function Service() {
@@ -42,17 +46,16 @@ function Service() {
   ];
 
   return (
-    <div className='main'>
-      <Typography variant='h4' style={{ fontWeight: "bold", textAlign: "center", margin: "80px", color: "#35AFFD" }}>What We Do ?</Typography>
+    <div className='main' style={{ padding: "50px" }}>
+      <Typography variant='h4' style={{ fontWeight: "bold", textAlign: "center", color: "white", }}>What We Do ?</Typography>
       <div className="services-container" >
 
         {services.map((service, index) => (
           <ServiceCard className="service" key={index} image={service.image} title={service.title} description={service.description} />
         ))}
-        <div className='shadowOne'></div>
-        <div className='shadowTwo'></div>
+
       </div>
-    </div>
+    </div >
 
 
 

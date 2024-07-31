@@ -3,10 +3,8 @@
 .container {
     padding: 50px;
     margin: 0 auto;
-    padding-top: -900px;
     font-weight: 800;
     text-align: center;
-
     animation: fadeIn 2s ease-in-out, slideInFromBottom 2s ease-out;
 }
 
@@ -94,7 +92,7 @@ html {
 
 @media only screen and (max-width: 400px) {
     .container {
-        padding-top: 800px;
+
         display: flex;
         flex-direction: column;
 
@@ -120,7 +118,7 @@ html {
 
 @media only screen and (min-width: 400px) and (max-width:749px) {
     .container {
-        padding-top: 550px;
+
         background-color: aqua;
 
 
@@ -148,10 +146,7 @@ html {
 }
 
 @media only screen and (min-width: 750px) and (max-width:999px) {
-    .container {
-        padding-top: 600px;
 
-    }
 
     .content {
         width: 90%;
@@ -169,11 +164,7 @@ html {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 1000px) and (max-width:1199px) {
-    .container {
 
-        padding-top: 270px;
-
-    }
 
     .title {}
 
@@ -193,7 +184,6 @@ html {
 
     .container {
 
-        padding-top: 230px;
         font-weight: 800;
 
     }
@@ -212,7 +202,7 @@ html {
 
     .container {
 
-        padding-top: 250px;
+
         font-weight: 800;
     }
 }

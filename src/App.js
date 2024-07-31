@@ -24,6 +24,12 @@ function App() {
         <Route exact path='/portfolio' element={<Portfolio />} />
         <Route exact path='/contactus' element={<ContactUs />} />
       </Routes>
+      <Home />
+      <About />
+      <Service />
+      <Product />
+      <Portfolio />
+      <ContactUs />
       <Footer />
     </BrowserRouter>
   );
