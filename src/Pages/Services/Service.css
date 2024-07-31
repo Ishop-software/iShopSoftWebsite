@@ -1,0 +1,179 @@
+/* src/Services.css */
+
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+
+}
+
+.main {
+    margin-top: 400px;
+
+}
+
+.service-card {
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    max-width: 350px;
+    flex: 1 0 21%;
+    box-shadow: 0 4px 8px rgba(19, 2, 2, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 4px 8px #35AFFD;
+}
+
+.service-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-description {
+    font-size: 18px;
+    color: #555;
+}
+
+.service-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: -90px auto 0;
+    background: white;
+    ;
+    border: 2px solid #35AFFD;
+    ;
+}
+
+.service-image img {
+    width: 10px;
+    height: 10px;
+    margin-top: 20px;
+}
+
+
+
+.service_logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.service-title {
+    height: 35px;
+    width: 90%;
+    background: white;
+    margin: 50px auto;
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+}
+
+.service-title::after {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, white, #007bff);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+
+.service-title::before {
+    content: '';
+
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #007bff, white);
+    position: absolute;
+    padding: 20px;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+    .services-container {
+        flex-direction: column;
+
+        gap: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: justify;
+
+    }
+
+    .service-card {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+
+    .main {
+        margin-top: 1600px;
+    }
+
+    .service-title {
+        font-size: 20px;
+    }
+}
+
+/* Responsive styles for tablet screens (two by two) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .services-container {
+        justify-content: space-around;
+        gap: 60px;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .service-card {
+        flex: 1 0 45%;
+        max-width: 45%;
+    }
+
+    .main {
+        margin-top: 1700px;
+    }
+}
+
+/* Responsive styles for laptop screens (three by one) */
+@media only screen and (min-width: 901px) and (max-width: 1300px) {
+    .services-container {
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .service-card {
+        flex: 1 0 30%;
+        max-width: 30%;
+
+    }
+
+    .service-description {
+        padding: 5px;
+    }
+
+    .main {
+        margin-top: 1000px;
+    }
+}
