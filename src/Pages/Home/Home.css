@@ -1,48 +1,53 @@
-/* src/App.css */
+/* src/Home.css */
 
+html,
 body {
-    background-color: #121212;
-    /* Dark mode background */
-    color: #ffffff;
-    /* Dark mode text color */
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
 }
 
-.App {
-    width: 80%;
-    margin: auto;
-    padding-top: 50px;
-}
-
-.slide-container {
+.carousel-container {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* Full screen height */
     overflow: hidden;
 }
 
-.slide-container img {
-    width: 100%;
-    animation: zoom 10s infinite;
-    transition: opacity 0.5s ease;
+.slide-container {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
 }
 
-.slide-container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+.zoom-effect {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    /* Dark overlay */
+    object-fit: cover;
+    overflow: hidden;
 }
 
-.slide-container img:hover {
-    opacity: 0.7;
-    /* Reduce opacity on hover */
+.slide {
+    flex: 0 0 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    /* Ensure the image doesn't overflow the slide */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 10s linear;
+    z-index: 1;
+}
+
+.slide.active img {
+    animation: zoom 10s infinite;
 }
 
 .text-overlay {
@@ -51,21 +56,30 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 24px;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
+    /* Ensure text is above the image */
+    pointer-events: none;
+}
+
+.text-title {
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.text-subtitle {
+    font-size: 25px;
 }
 
 @keyframes zoom {
-    0% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
 
     50% {
-        transform: scale(1.1);
-    }
-
-    100% {
-        transform: scale(1);
+        transform: scale(1.05);
+        /* Slightly reduced zoom to prevent overlap */
     }
 }

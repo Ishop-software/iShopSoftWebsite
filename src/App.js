@@ -12,10 +12,12 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
+
     <BrowserRouter>
+
       <Navbar />
       <Routes>
-        <Route exact path='/' element={<Home />} />
+        <Route exact path='/home' element={<Home />} />
         <Route exact path='/about' element={<About />} />
         <Route exact path='/services' element={<Service />} />
         <Route exact path='/products' element={<Product />} />

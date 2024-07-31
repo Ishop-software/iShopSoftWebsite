@@ -39,7 +39,7 @@ function Navbar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar className="menu-appbar" component="nav">
+      <AppBar className="menu_appbar" component="nav" position='fixed' sx={{ bgcolor: '#35AFFD' }}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           <Typography
             variant="h6"
