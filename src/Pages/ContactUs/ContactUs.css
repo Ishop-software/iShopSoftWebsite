@@ -1,0 +1,87 @@
+.contact-box {
+    background-color: #35AFFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.tit-box {
+    padding: 10px;
+}
+
+.contact-title {
+    font-weight: bold;
+    font-size: 35px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.para-box {
+    padding: 10px;
+}
+
+.contact-para {
+    display: flex;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 600;
+}
+
+.contact-txtbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box {
+    display: flex;
+    padding: 10px;
+}
+
+.contact-card {
+    width: 550px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 20px!important;
+    border-top-right-radius: 0px!important;
+    border-bottom-right-radius: 20px!important;
+    border-bottom-left-radius: 0px!important;
+}
+
+.text-box {
+    padding: 10px;
+    width: 100%;
+}
+
+.text-field {
+    width: 400px;
+}
+
+.message-box {
+    padding: 10px;
+    width: 100%!important;
+}
+
+.message-field {
+    width: 400px;
+}
+
+.btn-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #35AFFD!important;
+    color: #FFFFFF!important;
+    font-weight: bold;
+}
