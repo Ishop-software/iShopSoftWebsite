@@ -1,8 +1,9 @@
 import React from 'react';
 import "./Portfolio.css";
-import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material';
+import Slider from "react-slick";
+import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 import imgfirst from "../../Assets/PortfolioImages/imgfirst.png";
-import imgsecond from "../../Assets/PortfolioImages/imgsecond.png"; 
+import imgsecond from "../../Assets/PortfolioImages/imgsecond.png";
 import imgthird from "../../Assets/PortfolioImages/imgthird.png";
 import imgfour from "../../Assets/PortfolioImages/imgfour.png";
 
@@ -27,34 +28,61 @@ const portfolioList = [
         title: "Mobile Application",
         para: "Lizards are a widespread group of squamate reptiles, with over 6000 species, ranging across all continents except Antarctica"
     }
-]
+];
+
+const settings = {
+    infinite: "true",
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+};
 
 function Portfolio() {
-  return (
-    <Box className="portfolio-container">
-        <Typography variant="h4" className="portfolio-title">Portfolios</Typography>
-        <Box className="portfolio-flexbox">
-            {portfolioList.map((item, index) => (
-                <Card key={index} className="portfolio-cardsection">
-                    <CardMedia className="portfolio-imgsection"
-                        component="img"
-                        alt="portfolio image"
-                        height="140"
-                        image={item.image}
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            {item.title}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            {item.para}
-                        </Typography>
-                    </CardContent>
-                </Card>
-            ))}
-        </Box>
-    </Box>
-  )
+    return (
+        <div className="portfolio-container" style={{ backgroundColor: "#35AFFD", padding: "20px" }}>
+            <Typography variant="h4" className="portfolio-title" style={{ textAlign: "center", fontWeight: "bold", color: "#FFF" }}>Portfolios</Typography>
+            <Slider {...settings}>
+                {portfolioList.map((item, index) => (
+                    <Card key={index} className="portfolio-cardsection">
+                        <CardMedia
+                            component="img"
+                            alt="portfolio image"
+                            height="140"
+                            image={item.image}
+                            className="portfolio-imgsection"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="div">
+                                {item.title}
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary" style={{ fontSize: "16px" }}>
+                                {item.para}
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                ))}
+            </Slider>
+        </div>
+    );
 }
 
 export default Portfolio;
