@@ -5,6 +5,7 @@ import insta from "../../Assets/SocialmediaImages/insta.png";
 import twiter from "../../Assets/SocialmediaImages/twiter.png";
 import whatsapp from "../../Assets/SocialmediaImages/whatsapp.png";
 
+
 function Footer() {
   return (
     <Box>
@@ -33,13 +34,16 @@ function Footer() {
         </Box>
         <Box className="service-section">
           <Typography variant="h5">Services</Typography>
-          <List>Web Services</List>
+          <List>Web Design</List>
+          <List>Digital Marketting</List>
           <List>Web Development</List>
+          <List>Mobile App Development</List>
         </Box>
         <Box className="address-section">
           <Typography variant="h5">Location</Typography>
-          <List>Address</List>
-          <List>Contact</List>
+          <List>Address:</List>
+          <List>Naalukal Mandabam Near, Mayiladuthurai Main Road, Thiruvarur-610001.</List>
+          <a href="tel:+9865161714" style={{ color: '#000000', textDecoration: 'none' }}>Contact: +919865161714,<br /> +919865161716.</a>
         </Box>
       </Box>
       <Box className="copyright-section">
