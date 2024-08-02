@@ -85,3 +85,38 @@
     color: #FFFFFF!important;
     font-weight: bold;
 }
+
+@media (max-width: 480px) {
+    .form-box {
+        display: flex;
+        padding: 10px;
+    }
+    .contact-card {
+        width: 300px;
+        padding: 20px!important;
+    } 
+    .text-box {
+        padding: 10px!important;
+        /* width: 100px!important; */
+    }
+    
+    .text-field {
+        width: 280px!important;
+        padding: 10px!important;
+    }
+    
+    .message-box {
+        padding: 10px!important;
+        width: 280px!important;
+    }
+    
+    .message-field {
+        width: 280px!important;
+        padding: 10px!important;
+    }
+    
+    .submit-btn {
+        width: 200px;
+    }
+    
+}
