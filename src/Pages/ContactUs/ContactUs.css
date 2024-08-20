@@ -1,5 +1,5 @@
 .contact-box {
-    background-color: #35AFFD;
+    /* background-color: #35AFFD; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +14,7 @@
 .contact-title {
     font-weight: bold;
     font-size: 35px;
-    color: #FFFFFF;
+    color: #35AFFD;
     text-align: center;
 }
 
@@ -25,7 +25,7 @@
 .contact-para {
     display: flex;
     font-size: 20px;
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
     font-weight: 600;
 }
@@ -47,6 +47,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-top-left-radius: 20px!important;
     border-top-right-radius: 0px!important;
     border-bottom-right-radius: 20px!important;
