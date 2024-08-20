@@ -1,94 +1,53 @@
 import React from 'react';
 import "./Navbar.css";
 import {
-  AppBar, Box, Button, CssBaseline, Divider, Drawer, IconButton,
-  List, ListItem, ListItemButton, ListItemText, Toolbar, Typography
+  AppBar, Toolbar
 } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
-const drawerWidth = 240;
-const navItems = ["Home", "About", "Services", "Products", "Portfolio", "ContactUs"];
+const Navbar = () => {
 
-function Navbar(props) {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
-
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>IshopSoftware</Typography>
-      <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton component={Link} to={`/${item.toLowerCase()}`} sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
-
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const [isMobile, setIsMobile] = useState(false);
 
   return (
-    <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
-      <AppBar className="menu_appbar" component="nav" position='fixed' sx={{ bgcolor: '#35AFFD' }}>
-        <Toolbar sx={{ justifyContent: 'space-between' }}>
-          <Typography
-            variant="h6"
-            component="div"
-          >
-            IshopSoftware
-          </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button
-                key={item}
-                color="inherit"
-                component={Link}
-                to={`/${item.toLowerCase()}`}
-              >
-                {item}
-              </Button>
-            ))}
-          </Box>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="end"
-            onClick={handleDrawerToggle}
-            sx={{ display: { sm: 'none' } }}
-          >
-            <MenuIcon />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
-      <nav>
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true,
-          }}
-          sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-          }}
+
+    <AppBar className="appBar" style={{ position: "fixed", height: "12vh", backgroundColor: "white" }}>
+      <Toolbar>
+        {/* <img className="logo" src={""} style={{ width: "15vh", height: "5vh" }}></img> */}
+        <ul className={isMobile ? "nav-links-mobile" : "navlinks"}
+          onClick={() => setIsMobile(false)}>
+          <Link to='home' spy={true} smooth duration={500} className='home'>
+            <li>Home</li>
+          </Link>
+          <Link to='about' spy={true} smooth duration={500} offset={-200} className='about'>
+            <li>About</li>
+          </Link>
+          <Link to='services' spy={true} smooth duration={500} offset={-100} className='services'>
+            <li>Services</li>
+          </Link>
+          <Link to='products' spy={true} smooth duration={500} offset={-100} className='product'>
+            <li>Products</li>
+          </Link>
+          <Link to='portfolio' spy={true} smooth duration={500} offset={-100} className='portfolio'>
+            <li>Portfolio</li>
+          </Link>
+          <Link to='contact' spy={true} smooth duration={500} offset={-100} className='contact'>
+            <li>Contact Us</li>
+          </Link>
+        </ul>
+
+        <button className="mobile-menu-icon"
+          onClick={() => setIsMobile(!isMobile)}
         >
-          {drawer}
-        </Drawer>
-      </nav>
-    </Box>
-  );
+          {isMobile ? <i className='fas fa-times'></i>
+            : <i className='fas fa-bars'></i>}
+        </button>
+
+      </Toolbar>
+    </AppBar>
+
+  )
 }
 
 export default Navbar;

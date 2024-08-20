@@ -58,8 +58,8 @@ const settings = {
 
 function Portfolio() {
     return (
-        <div className="portfolio-container" style={{ backgroundColor: "#35AFFD", padding: "20px" }}>
-            <Typography variant="h4" className="portfolio-title" style={{ textAlign: "center", fontWeight: "bold", color: "#FFF" }}>Portfolios</Typography>
+        <div className="portfolio-container" style={{ backgroundColor: "#35AFFD", padding: "20px" }} id='portfolio'>
+            <Typography variant="h4" className="portfolio-title" style={{ textAlign: "center", fontWeight: "bold", color: "#FFF" }}>Portfolio</Typography>
             <Slider {...settings}>
                 {portfolioList.map((item, index) => (
                     <Card key={index} className="portfolio-cardsection">

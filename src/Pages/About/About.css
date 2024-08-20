@@ -6,6 +6,7 @@
     font-weight: 800;
     text-align: center;
     animation: fadeIn 2s ease-in-out, slideInFromBottom 2s ease-out;
+
 }
 
 .wrap {
