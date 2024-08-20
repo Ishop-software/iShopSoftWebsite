@@ -9,18 +9,18 @@ const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.sendForm('service_hb42cuy', 'template_btao74r', form.current, 'Pe05Ot0r9AEJLDk53')
-    .then((result) => {
-      console.log(result.text);
-      alert('Message sent successfully!');
-    }, (error) => {
-      console.log(error.text);    
-      alert('Failed to send message. Please try again later.');
-    });
-    e.target.reset(); 
+      .then((result) => {
+        console.log(result.text);
+        alert('Message sent successfully!');
+      }, (error) => {
+        console.log(error.text);
+        alert('Failed to send message. Please try again later.');
+      });
+    e.target.reset();
   };
 
   return (
-    <Box className="contact-box">
+    <Box className="contact-box" id="contact">
       <Box className="contact-txtbox">
         <Box className="tit-box">
           <Typography variant="h3" className="contact-title">ContactUs</Typography>
@@ -42,7 +42,7 @@ const ContactUs = () => {
               <TextField className="text-field" type="email" placeholder="Enter Your Email" name="user_email" required />
             </Box>
             <Box className="message-box">
-              <TextField className="message-field" rows={3} id="outlined-textarea" multiline name="message" placeholder="Enter Your Text Message" required/>
+              <TextField className="message-field" rows={3} id="outlined-textarea" multiline name="message" placeholder="Enter Your Text Message" required />
             </Box>
             <Box className="btn-field">
               <Button className="submit-btn" type="submit" value="Send" variant="contained" >Submit</Button>

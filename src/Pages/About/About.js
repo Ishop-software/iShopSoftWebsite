@@ -6,7 +6,7 @@ import image from "../../Assets/AboutUsImages/aboutimage.jpg";
 
 const AboutUs = () => {
   return (
-    <div className="container">
+    <div className="container" id="about">
       <Typography className="title" style={{ color: "#35AFFD", fontWeight: "bold", fontFamily: "Merriweather Sans" }} sx={{ fontSize: { lg: "30px", sm: "28px", xs: "20px" } }}>About Us</Typography>
       <div className='wrap' style={{ gap: "50px", height: "100%" }}>
         <Typography className="content" style={{ fontSize: "18px", textAlign: "justify", color: "black", }}>&nbsp;&nbsp;&nbsp;&nbsp;

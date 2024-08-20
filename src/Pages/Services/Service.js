@@ -46,7 +46,7 @@ function Service() {
   ];
 
   return (
-    <div className='main' style={{ padding: "50px" }}>
+    <div className='main' style={{ padding: "50px" }} id='services'>
       <Typography variant='h4' style={{ fontWeight: "bold", textAlign: "center", color: "white", }}>What We Do ?</Typography>
       <div className="services-container" >
 

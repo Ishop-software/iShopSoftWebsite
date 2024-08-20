@@ -19,7 +19,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" id="home">
       <div className="slide-container" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {images.map((img, index) => (
           <div key={index} className={`slide ${index === currentIndex ? 'active' : ''}`}>

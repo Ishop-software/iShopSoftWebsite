@@ -37,7 +37,7 @@ const productNameList = [
 
 function Products() {
   return (
-    <div>
+    <div id='products'>
       <Typography variant='h4' style={{ fontWeight: "bold", textAlign: "center", margin: "30px", color: "#35AFFD" }}>Products</Typography>
       <Box className="product-flexbox">
         {productNameList.map((item, index) => (
