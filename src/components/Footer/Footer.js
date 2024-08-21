@@ -1,10 +1,11 @@
 import React from 'react';
 import "./Footer.css";
-import { Box, List, Typography } from '@mui/material';
-import insta from "../../Assets/SocialmediaImages/insta.png";
-import twiter from "../../Assets/SocialmediaImages/twiter.png";
+import { Box, Link, List, Typography } from '@mui/material';
+// import insta from "../../Assets/SocialmediaImages/insta.png";
+// import twiter from "../../Assets/SocialmediaImages/twiter.png";
 import whatsapp from "../../Assets/SocialmediaImages/whatsapp.png";
-
+import gmail from "../../Assets/SocialmediaImages/gmail.png";
+import { Link as RouterLink } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -12,25 +13,37 @@ function Footer() {
       <Box className="footer-container">
         <Box className="logo-section">
           <Box className="company-info">
-            <Typography variant="h4">IshopSoftware</Typography>
+            <Typography variant="h4" className="footer-title">IshopSoftware</Typography>
             <Typography variant="p" className="footer-para">
               Lorem ipsum dolor sit amet consectetur. Purus dolor aliquam aenean quisque rhoncus nullam massa maecenas. Dui varius at vel dignissim.
             </Typography>
           </Box>
           <Box className="social-media">
-            <img src={insta} alt="" className="media-images" />
+            {/* <Link href="https://www.instagram.com/your-instagram-username" arget="_blank" rel="noopener noreferrer">
+              <img src={insta} alt="" className="media-images" />
+            </Link>
             <img src={twiter} alt="" className="media-images" />
-            <img src={whatsapp} alt="" className="media-images" />
+            */}
+            <Box className="mail-logo">
+              <Link href="mailto:ishoptvr@example.com">
+                <img src={gmail} alt=""  className="media-images" />
+              </Link>
+            </Box>
+            <Box className="whatsapp-logo">
+              <Link href="https://wa.me/+919865161714" target="_blank" rel="noopener noreferrer" sx={{ textDecoration: 'none', color: '#fff' }} >
+                <img src={whatsapp} alt="" className="media-images" />
+              </Link>
+            </Box>
           </Box>
         </Box>
         <Box className="our-pages">
           <Typography variant="h5">Quick Links</Typography>
-          <List>Home</List>
-          <List>About</List>
-          <List>Services</List>
-          <List>Products</List>
-          <List>Portfolio</List>
-          <List>ContactUs</List>
+          <List><Link to="/" component={RouterLink} className="footer-links">Home</Link></List>
+          <List><Link to="/about" component={RouterLink} className="footer-links">About</Link></List>
+          <List><Link to="/services" component={RouterLink} className="footer-links">Services</Link></List>
+          <List><Link to="/products" component={RouterLink} className="footer-links">Products</Link></List>
+          <List><Link to="/portfolio" component={RouterLink} className="footer-links">Portfolio</Link></List>
+          <List><Link to="/contactus" component={RouterLink} className="footer-links">ContactUs</Link></List>
         </Box>
         <Box className="service-section">
           <Typography variant="h5">Services</Typography>
@@ -43,7 +56,7 @@ function Footer() {
           <Typography variant="h5">Location</Typography>
           <List>Address:</List>
           <List>Naalukal Mandabam Near, Mayiladuthurai Main Road, Thiruvarur-610001.</List>
-          <a href="tel:+9865161714" style={{ color: '#000000', textDecoration: 'none' }}>Contact: +919865161714,<br /> +919865161716.</a>
+          <Link href="tel:+9865161714" className="contact-link">Contact: +919865161714,<br /> +919865161716.</Link>
         </Box>
       </Box>
       <Box className="copyright-section">
