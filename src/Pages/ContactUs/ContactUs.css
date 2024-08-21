@@ -72,8 +72,6 @@
     color: #FFFFFF!important;
     font-weight: bold;
 }
-<<<<<<< HEAD
-=======
 @media (max-width: 480px) {
     .form-box {
         display: flex;
@@ -103,4 +101,3 @@
     }
     
 }
->>>>>>> ebd6d90 (Contact page is modified)
