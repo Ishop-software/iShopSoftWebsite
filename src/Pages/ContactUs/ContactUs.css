@@ -1,27 +1,22 @@
 .contact-box {
-    /* background-color: #35AFFD; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
 }
-
 .tit-box {
     padding: 10px;
 }
-
 .contact-title {
     font-weight: bold;
     font-size: 35px;
     color: #35AFFD;
     text-align: center;
 }
-
 .para-box {
     padding: 10px;
 }
-
 .contact-para {
     display: flex;
     font-size: 20px;
@@ -29,17 +24,14 @@
     text-align: center;
     font-weight: 600;
 }
-
 .contact-txtbox {
     display: flex;
     flex-direction: column;
 }
-
 .form-box {
     display: flex;
     padding: 10px;
 }
-
 .contact-card {
     width: 550px;
     padding: 20px;
@@ -53,25 +45,20 @@
     border-bottom-right-radius: 20px!important;
     border-bottom-left-radius: 0px!important;
 }
-
 .text-box {
     padding: 10px;
     width: 100%;
 }
-
 .text-field {
     width: 400px;
 }
-
 .message-box {
     padding: 10px;
     width: 100%!important;
 }
-
 .message-field {
     width: 400px;
 }
-
 .btn-field {
     display: flex;
     flex-direction: column;
@@ -79,10 +66,41 @@
     justify-content: space-evenly;
     padding: 10px;
 }
-
 .submit-btn {
     width: 100%;
     background-color: #35AFFD!important;
     color: #FFFFFF!important;
     font-weight: bold;
 }
+<<<<<<< HEAD
+=======
+@media (max-width: 480px) {
+    .form-box {
+        display: flex;
+        padding: 10px;
+    }
+    .contact-card {
+        width: 300px;
+        padding: 20px!important;
+    } 
+    .text-box {
+        padding: 10px!important;
+    }
+    .text-field {
+        width: 280px!important;
+        padding: 10px!important;
+    }
+    .message-box {
+        padding: 10px!important;
+        width: 280px!important;
+    }
+    .message-field {
+        width: 280px!important;
+        padding: 10px!important;
+    }
+    .submit-btn {
+        width: 200px;
+    }
+    
+}
+>>>>>>> ebd6d90 (Contact page is modified)
