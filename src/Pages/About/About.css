@@ -118,13 +118,13 @@ html {
 }
 
 @media only screen and (min-width: 400px) and (max-width:749px) {
-    .container {
+    /* .container {
 
         background-color: aqua;
 
 
 
-    }
+    } */
 
     .content {
         width: 100%;

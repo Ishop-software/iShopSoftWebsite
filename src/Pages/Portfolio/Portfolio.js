@@ -58,7 +58,7 @@ const settings = {
 
 function Portfolio() {
     return (
-        <div className="portfolio-container" style={{ backgroundColor: "#35AFFD", padding: "20px" }} id='portfolio'>
+        <div className="portfolio-container">
             <Typography variant="h4" className="portfolio-title" style={{ textAlign: "center", fontWeight: "bold", color: "#FFF" }}>Portfolio</Typography>
             <Slider {...settings}>
                 {portfolioList.map((item, index) => (
