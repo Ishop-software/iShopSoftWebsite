@@ -60,7 +60,7 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar position="fixed">
+      <AppBar position="fixed" className="appbar">
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: 1, textAlign: 'center' }}>
             IshopSoftware
@@ -106,7 +106,7 @@ const Navbar = () => {
         </List>
       </Drawer>
       <Toolbar />
-      <div className="portfolio-contents">{renderPage()}</div>
+      <div className="content">{renderPage()}</div>
     </>
   );
 };
