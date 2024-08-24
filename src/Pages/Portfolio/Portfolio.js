@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Portfolio.css";
 import Slider from "react-slick";
-import { Card, CardContent, CardMedia, Typography } from '@mui/material';
+import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import imgfirst from "../../Assets/PortfolioImages/imgfirst.png";
 import imgsecond from "../../Assets/PortfolioImages/imgsecond.png";
 import imgthird from "../../Assets/PortfolioImages/imgthird.png";
@@ -58,8 +58,8 @@ const settings = {
 
 function Portfolio() {
     return (
-        <div className="portfolio-container">
-            <Typography variant="h4" className="portfolio-title" style={{ textAlign: "center", fontWeight: "bold", color: "#FFF" }}>Portfolio</Typography>
+        <Box className="portfolio-container">
+            <Typography variant="h4" className="portfolio-title">Portfolio</Typography>
             <Slider {...settings}>
                 {portfolioList.map((item, index) => (
                     <Card key={index} className="portfolio-cardsection">
@@ -81,7 +81,7 @@ function Portfolio() {
                     </Card>
                 ))}
             </Slider>
-        </div>
+        </Box>
     );
 }
 
