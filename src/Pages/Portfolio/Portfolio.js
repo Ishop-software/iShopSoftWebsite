@@ -59,28 +59,32 @@ const settings = {
 function Portfolio() {
     return (
         <Box className="portfolio-container">
-            <Typography variant="h4" className="portfolio-title">Portfolio</Typography>
-            <Slider {...settings}>
-                {portfolioList.map((item, index) => (
-                    <Card key={index} className="portfolio-cardsection">
-                        <CardMedia
-                            component="img"
-                            alt="portfolio image"
-                            height="140"
-                            image={item.image}
-                            className="portfolio-imgsection"
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                {item.title}
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary" style={{ fontSize: "16px" }}>
-                                {item.para}
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                ))}
-            </Slider>
+            <Box className="title-container">
+                <Typography variant="h4" className="portfolio-title">Portfolio</Typography>
+            </Box>
+            <Box className="slider-container">
+                <Slider {...settings}>
+                    {portfolioList.map((item, index) => (
+                        <Card key={index} className="portfolio-cardsection">
+                            <CardMedia
+                                component="img"
+                                alt="portfolio image"
+                                height="140"
+                                image={item.image}
+                                className="portfolio-imgsection"
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    {item.title}
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary" style={{ fontSize: "16px" }}>
+                                    {item.para}
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    ))}
+                </Slider>
+            </Box>
         </Box>
     );
 }
