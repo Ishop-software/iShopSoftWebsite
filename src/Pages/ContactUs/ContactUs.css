@@ -72,6 +72,12 @@
     color: #FFFFFF!important;
     font-weight: bold;
 }
+@media (max-width: 10240px) {
+    #contact-us-section {
+        min-height: 0vh!important;
+    }
+}
+
 @media (max-width: 480px) {
     .form-box {
         display: flex;
