@@ -1,11 +1,11 @@
 import React from 'react';
 import "./Footer.css";
-import { Box, Link, List, Typography } from '@mui/material';
+import { Box, List, Typography } from '@mui/material';
 // import insta from "../../Assets/SocialmediaImages/insta.png";
 // import twiter from "../../Assets/SocialmediaImages/twiter.png";
 import whatsapp from "../../Assets/SocialmediaImages/whatsapp.png";
 import gmail from "../../Assets/SocialmediaImages/gmail.png";
-import { Link as RouterLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 function Footer() {
   return (
@@ -38,12 +38,12 @@ function Footer() {
         </Box>
         <Box className="our-pages">
           <Typography variant="h5">Quick Links</Typography>
-          <List><Link to="/" component={RouterLink} className="footer-links">Home</Link></List>
-          <List><Link to="/about" component={RouterLink} className="footer-links">About</Link></List>
-          <List><Link to="/services" component={RouterLink} className="footer-links">Services</Link></List>
-          <List><Link to="/products" component={RouterLink} className="footer-links">Products</Link></List>
-          <List><Link to="/portfolio" component={RouterLink} className="footer-links">Portfolio</Link></List>
-          <List><Link to="/contactus" component={RouterLink} className="footer-links">ContactUs</Link></List>
+          <List><Link to="home" smooth={true} duration={500} className="footer-links">Home</Link></List>
+          <List><Link to="about" smooth={true} duration={500} className="footer-links">About</Link></List>
+          <List><Link to="services" smooth={true} duration={500} className="footer-links">Services</Link></List>
+          <List><Link to="products" smooth={true} duration={500} className="footer-links">Products</Link></List>
+          <List><Link to="portfolio" smooth={true} duration={500} className="footer-links">Portfolio</Link></List>
+          <List><Link to="contact" smooth={true} duration={500} className="footer-links">ContactUs</Link></List>
         </Box>
         <Box className="service-section">
           <Typography variant="h5">Services</Typography>

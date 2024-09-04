@@ -1,37 +1,37 @@
 import React from 'react';
 import "./Product.css";
 import { Box, Card, CardContent, Typography } from '@mui/material';
-import Productfirst from "../../Assets/ProductImages/Productfirst.png";
-import Productsecond from "../../Assets/ProductImages/Productsecond.png";
-import Productthird from "../../Assets/ProductImages/Productthird.png";
-import Productfour from "../../Assets/ProductImages/Productfour.png";
-import Productfive from "../../Assets/ProductImages/Productfive.png";
-import Productsix from "../../Assets/ProductImages/Productsix.png";
+import ImgFirst from "../../Assets/ProductImages/ImgFirst.png";
+import ImgSecond from "../../Assets/ProductImages/ImgSecond.png";
+import ImgThird from "../../Assets/ProductImages/ImgThird.png";
+import ImgFour from "../../Assets/ProductImages/ImgFour.png";
+import ImgFive from "../../Assets/ProductImages/ImgFive.png";
+import ImgSix from "../../Assets/ProductImages/ImgSix.png";
 
 const productNameList = [
   {
-    Name: "Product One",
-    image: Productfirst,
+    Name: "KeyBoard And Mouse",
+    image: ImgFirst,
   },
   {
-    Name: "Product Two",
-    image: Productsecond,
+    Name: "Laptop",
+    image: ImgSecond,
   },
   {
-    Name: "Product Three",
-    image: Productthird,
+    Name: "Wired HeadPhone",
+    image: ImgThird,
   },
   {
-    Name: "Product Four",
-    image: Productfour,
+    Name: "Printer",
+    image: ImgFour,
   },
   {
-    Name: "Product Five",
-    image: Productfive,
+    Name: "CPU",
+    image: ImgFive,
   },
   {
-    Name: "Product Six",
-    image: Productsix,
+    Name: "Hardisk And Ram",
+    image: ImgSix,
   }
 ];
 
