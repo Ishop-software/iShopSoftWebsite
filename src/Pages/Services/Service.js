@@ -3,7 +3,7 @@ import '../Services/Service.css'
 import sellingImage from "../../Assets/Serviceimages/Selling.png";
 import webDevImage from "../../Assets/Serviceimages/web.png";
 import BillingImage from "../../Assets/Serviceimages/billing.png";
-import MobDevImage from "../../Assets/Serviceimages/web.png";
+import MobDevImage from "../../Assets/Serviceimages/mob.png";
 import { Typography } from '@material-ui/core';
 
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
-import img1 from '../../Assets/PortfolioImages/HomeImages/image1.jpg';
-import img2 from '../../Assets/PortfolioImages/HomeImages/image2.jpg';
+import img1 from '../../Assets/HomeImages/slide1.jpg';
+import img2 from '../../Assets/HomeImages/slide2.jpg';
 
 const images = [
   { src: img1, text1: 'Exclusive Range of', text2: 'Laptop Accessories At Affordable Cost' },

@@ -2,31 +2,32 @@ import React from 'react';
 import "./Portfolio.css";
 import Slider from "react-slick";
 import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material';
-import imgfirst from "../../Assets/PortfolioImages/imgfirst.png";
-import imgsecond from "../../Assets/PortfolioImages/imgsecond.png";
-import imgthird from "../../Assets/PortfolioImages/imgthird.png";
-import imgfour from "../../Assets/PortfolioImages/imgfour.png";
+import webDesign from "../../Assets/PortfolioImages/webDesign.jpeg";
+import webApplication from "../../Assets/PortfolioImages/webApplication.jpeg";
+import systemSoftware from "../../Assets/PortfolioImages/systemSoftware.jpeg";
+import mobileDesign from "../../Assets/PortfolioImages/mobileDesign.jpeg";
+
 
 const portfolioList = [
     {
-        image: imgfirst,
+        image: webDesign,
         title: "Web Design",
-        para: "Lizards are a widespread group of squamate reptiles, with over 6000 species, ranging across all continents except Antarctica"
+        para: "At Ishop, our website is more than just a digital presence—it's a reflection of our commitment to delivering cutting-edge software solutions tailored to your business needs. Our clean, modern design emphasizes usability, making it easy for clients to navigate through our services, explore our expertise, and engage with our team."
     },
     {
-        image: imgsecond,
+        image: webApplication,
         title: "Web Applications",
-        para: "Lizards are a widespread group of squamate reptiles, with over 6000 species, ranging across all continents except Antarctica"
+        para: "Our expert team of developers leverages the latest technologies to build secure, high-performance applications that drive business growth. Whether you're looking to develop a custom solution from scratch or enhance an existing platform, we ensure a seamless & user-friendly experience across all devices."
     },
     {
-        image: imgthird,
+        image: systemSoftware,
         title: "System Software",
-        para: "Lizards are a widespread group of squamate reptiles, with over 6000 species, ranging across all continents except Antarctica"
+        para: "Our comprehensive system software solutions are designed to enhance the performance, security, and scalability of your IT infrastructure. We specialize in developing and integrating system software that forms the backbone of your computing environment, including operating systems, device drivers, utility programs and more."
     },
     {
-        image: imgfour,
+        image: mobileDesign,
         title: "Mobile Application",
-        para: "Lizards are a widespread group of squamate reptiles, with over 6000 species, ranging across all continents except Antarctica"
+        para: "At Ishop, we specialize in creating innovative, user-friendly mobile applications tailored to meet the unique needs of your business. Our expert team of developers and designers work closely with you to build custom mobile solutions that enhance user engagement, streamline operations, and drive business growth."
     }
 ];
 
@@ -58,7 +59,7 @@ const settings = {
 
 function Portfolio() {
     return (
-        <Box className="portfolio-container">
+        <Box className="portfolio-container" id="portfolio">
             <Box className="title-container">
                 <Typography variant="h4" className="portfolio-title">Portfolio</Typography>
             </Box>
