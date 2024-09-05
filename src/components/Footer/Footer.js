@@ -15,7 +15,7 @@ function Footer() {
           <Box className="company-info">
             <Typography variant="h4" className="footer-title">IshopSoftware</Typography>
             <Typography variant="p" className="footer-para">
-              Lorem ipsum dolor sit amet consectetur. Purus dolor aliquam aenean quisque rhoncus nullam massa maecenas. Dui varius at vel dignissim.
+              We deal in a wide range of computers, laptops and accessories that make the use of technology easier. We have the chance to gain a huge number of customers for ourselves by providing the best quality products and services.
             </Typography>
           </Box>
           <Box className="social-media">
