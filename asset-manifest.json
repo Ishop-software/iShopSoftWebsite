@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1b90eda8.css",
+    "main.js": "/static/js/main.f7269d54.js",
+    "static/js/453.062d4697.chunk.js": "/static/js/453.062d4697.chunk.js",
+    "static/media/ImgSecond.png": "/static/media/ImgSecond.1e1d357ef1f2fa4cbc7d.png",
+    "static/media/ImgSix.png": "/static/media/ImgSix.48060602f48ea9291af8.png",
+    "static/media/ImgFirst.png": "/static/media/ImgFirst.727223577bfc23903f84.png",
+    "static/media/ImgFour.png": "/static/media/ImgFour.ca432b21e827280ec86d.png",
+    "static/media/ImgThird.png": "/static/media/ImgThird.09c90ff2289dd7460e26.png",
+    "static/media/aboutImage.png": "/static/media/aboutImage.e21022723099222029ab.png",
+    "static/media/mobileDesign.jpeg": "/static/media/mobileDesign.62c3fa6cfdb6a42a020e.jpeg",
+    "static/media/ImgFive.png": "/static/media/ImgFive.480ed009bd11726bbbd6.png",
+    "static/media/whatsapp.png": "/static/media/whatsapp.164f3422c7bc42f4ee64.png",
+    "static/media/slide2.jpg": "/static/media/slide2.f05480e935bd05186ded.jpg",
+    "static/media/slide1.jpg": "/static/media/slide1.34f4607e27bb0faace63.jpg",
+    "static/media/webApplication.jpeg": "/static/media/webApplication.dc167d9abd4c1603ae64.jpeg",
+    "static/media/gmail.png": "/static/media/gmail.157bb288bd33b963fa79.png",
+    "static/media/systemSoftware.jpeg": "/static/media/systemSoftware.327d227a170a928e6f7d.jpeg",
+    "static/media/webDesign.jpeg": "/static/media/webDesign.82bca0d67e477099cd66.jpeg",
+    "static/media/Selling.png": "/static/media/Selling.416c5e293eebe1c217ae.png",
+    "static/media/mob.png": "/static/media/mob.e1b93bef34265da6fa77.png",
+    "static/media/web.png": "/static/media/web.f9d169e80e84e333a6d1.png",
+    "static/media/billing.png": "/static/media/billing.1cd874e1681550b8c318.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.1b90eda8.css.map": "/static/css/main.1b90eda8.css.map",
+    "main.f7269d54.js.map": "/static/js/main.f7269d54.js.map",
+    "453.062d4697.chunk.js.map": "/static/js/453.062d4697.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b90eda8.css",
+    "static/js/main.f7269d54.js"
+  ]
+}
