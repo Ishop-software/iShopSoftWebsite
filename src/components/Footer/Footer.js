@@ -14,7 +14,7 @@ function Footer() {
         <Box className="logo-section">
           <Box className="company-info">
             <Typography variant="h4" className="footer-title">IshopSoftware</Typography>
-            <Typography variant="p" className="footer-para">
+            <Typography variant="h6" className="footer-para">
               We deal in a wide range of computers, laptops and accessories that make the use of technology easier. We have the chance to gain a huge number of customers for ourselves by providing the best quality products and services.
             </Typography>
           </Box>
@@ -41,7 +41,6 @@ function Footer() {
           <List><Link to="home" smooth={true} duration={500} className="footer-links">Home</Link></List>
           <List><Link to="about" smooth={true} duration={500} className="footer-links">About</Link></List>
           <List><Link to="services" smooth={true} duration={500} className="footer-links">Services</Link></List>
-          <List><Link to="products" smooth={true} duration={500} className="footer-links">Products</Link></List>
           <List><Link to="portfolio" smooth={true} duration={500} className="footer-links">Portfolio</Link></List>
           <List><Link to="contact" smooth={true} duration={500} className="footer-links">ContactUs</Link></List>
         </Box>
