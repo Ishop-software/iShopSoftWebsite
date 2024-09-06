@@ -4,13 +4,12 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import Typography from '@mui/material/Typography';
 import { Drawer, List, ListItem, ListItemText, Box } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Logo from "../../Assets/Logo/Logo.png";
 import Home from '../../Pages/Home/Home.js';
 import About from '../../Pages/About/About.js';
 import Service from '../../Pages/Services/Service.js';
-import Product from '../../Pages/Product/Product.js';
 import Portfolio from '../../Pages/Portfolio/Portfolio.js';
 import ContactUs from '../../Pages/ContactUs/ContactUs.js';
 
@@ -31,7 +30,6 @@ const Navbar = () => {
     { name: 'Home', component: <Home /> },
     { name: 'About Us', component: <About /> },
     { name: 'Services', component: <Service /> },
-    { name: 'Products', component: <Product /> },
     { name: 'Portfolio', component: <Portfolio /> },
     { name: 'Contact Us', component: <ContactUs /> }
   ];
@@ -60,11 +58,11 @@ const Navbar = () => {
 
   return (
     <>
-      <AppBar position="fixed" className="appbar">
+      <AppBar position="sticky" className="appbar">
         <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1, textAlign: 'center' }}>
-            IshopSoftware
-          </Typography>
+          <Box className="app-box">
+            <img src={Logo} alt="" className="app-logo" />
+          </Box>
           {isMobile ? (
             <IconButton
               edge="start"
