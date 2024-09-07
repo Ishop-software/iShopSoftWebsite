@@ -15,7 +15,7 @@ function Footer() {
           <Box className="company-info">
             <Typography variant="h4" className="footer-title">IshopSoftware</Typography>
             <Typography variant="h6" className="footer-para">
-              We deal in a wide range of computers, laptops and accessories that make the use of technology easier. We have the chance to gain a huge number of customers for ourselves by providing the best quality products and services.
+              Let us help you turn your digital dreams into reality. Whether you're a startup or an established brand, our solutions are designed to drive results and elevate your business to new heights.
             </Typography>
           </Box>
           <Box className="social-media">
@@ -37,7 +37,7 @@ function Footer() {
           </Box>
         </Box>
         <Box className="our-pages">
-          <Typography variant="h5">Quick Links</Typography>
+          <Typography className="footer-title" variant="h5">Quick Links</Typography>
           <List><Link to="home" smooth={true} duration={500} className="footer-links">Home</Link></List>
           <List><Link to="about" smooth={true} duration={500} className="footer-links">About</Link></List>
           <List><Link to="services" smooth={true} duration={500} className="footer-links">Services</Link></List>
@@ -45,16 +45,16 @@ function Footer() {
           <List><Link to="contact" smooth={true} duration={500} className="footer-links">ContactUs</Link></List>
         </Box>
         <Box className="service-section">
-          <Typography variant="h5">Services</Typography>
-          <List>Web Design</List>
-          <List>Digital Marketting</List>
-          <List>Web Development</List>
-          <List>Mobile App Development</List>
+          <Typography className="footer-title" variant="h5">Services</Typography>
+          <List className="footer-list">Web Design</List>
+          <List className="footer-list">Digital Marketting</List>
+          <List className="footer-list">Web Development</List>
+          <List className="footer-list">Mobile App Development</List>
         </Box>
         <Box className="address-section">
-          <Typography variant="h5">Location</Typography>
-          <List>Address:</List>
-          <List>Naalukal Mandabam Near, Mayiladuthurai Main Road, Thiruvarur-610001.</List>
+          <Typography className="footer-title" variant="h5">Location</Typography>
+          <List className="footer-list">Address:</List>
+          <List className="footer-list">Naalukal Mandabam Near,<br /> Mayiladuthurai Main Road,<br /> Thiruvarur-610001.</List>
           <Link href="tel:+9865161714" className="contact-link">Contact: +919865161714,<br /> +919865161716.</Link>
         </Box>
       </Box>
