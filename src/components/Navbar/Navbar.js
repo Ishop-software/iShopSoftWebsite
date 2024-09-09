@@ -59,7 +59,7 @@ const Navbar = () => {
   return (
     <>
       <AppBar position="sticky" className="appbar">
-        <Toolbar>
+        {/* <Toolbar> */}
           <Box className="app-box">
             <img src={Logo} alt="" className="app-logo" />
           </Box>
@@ -88,22 +88,22 @@ const Navbar = () => {
               </List>
             </Box>
           )}
-        </Toolbar>
+        {/* </Toolbar> */}
       </AppBar>
-      <Drawer anchor="left" open={isDrawerOpen} onClose={toggleDrawer}>
-        <List onClick={closeDrawer}>
-          {pages.map((page, index) => (
-            <ListItem 
-              key={index}
-              button
-              onClick={() => handlePageChange(page.name)}
-            >
-              <ListItemText primary={page.name} />
-            </ListItem>
-          ))}
-        </List>
-      </Drawer>
-      <Toolbar />
+        <Drawer anchor="left" open={isDrawerOpen} onClose={toggleDrawer}>
+          <List onClick={closeDrawer}>
+            {pages.map((page, index) => (
+              <ListItem className="mobile-menu" 
+                key={index}
+                button  
+                onClick={() => handlePageChange(page.name)}
+              >
+                <ListItemText primary={page.name}/>
+              </ListItem>
+            ))}
+          </List>
+        </Drawer>
+      {/* <Toolbar /> */}
       <div className="content">{renderPage()}</div>
     </>
   );
