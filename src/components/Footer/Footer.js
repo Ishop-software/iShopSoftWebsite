@@ -38,23 +38,23 @@ function Footer() {
         </Box>
         <Box className="our-pages">
           <Typography className="footer-title" variant="h5">Quick Links</Typography>
-          <List><Link to="home" smooth={true} duration={500} className="footer-links">Home</Link></List>
-          <List><Link to="about" smooth={true} duration={500} className="footer-links">About</Link></List>
-          <List><Link to="services" smooth={true} duration={500} className="footer-links">Services</Link></List>
-          <List><Link to="portfolio" smooth={true} duration={500} className="footer-links">Portfolio</Link></List>
-          <List><Link to="contact" smooth={true} duration={500} className="footer-links">ContactUs</Link></List>
+          <Typography variant="h6"><Link to="home" smooth={true} duration={500} className="footer-links">Home</Link></Typography>
+          <Typography variant="h6"><Link to="about" smooth={true} duration={500} className="footer-links">About</Link></Typography>
+          <Typography variant="h6"><Link to="services" smooth={true} duration={500} className="footer-links">Services</Link></Typography>
+          <Typography variant="h6"><Link to="portfolio" smooth={true} duration={500} className="footer-links">Portfolio</Link></Typography>
+          <Typography variant="h6"><Link to="contact" smooth={true} duration={500} className="footer-links">ContactUs</Link></Typography>
         </Box>
         <Box className="service-section">
-          <Typography className="footer-title" variant="h5">Services</Typography>
-          <List className="footer-list">Web Design</List>
-          <List className="footer-list">Digital Marketting</List>
-          <List className="footer-list">Web Development</List>
-          <List className="footer-list">Mobile App Development</List>
+          <Typography className="footer-title" variant="h5">Our Services</Typography>
+          <Typography variant="h6" className="footer-list">Web Design</Typography>
+          <Typography variant="h6" className="footer-list">Digital Marketting</Typography>
+          <Typography variant="h6" className="footer-list">Web Development</Typography>
+          <Typography variant="h6" className="footer-list">Mobile App Development</Typography>
         </Box>
         <Box className="address-section">
           <Typography className="footer-title" variant="h5">Location</Typography>
-          <List className="footer-list">Address:</List>
-          <List className="footer-list">Naalukal Mandabam Near,<br /> Mayiladuthurai Main Road,<br /> Thiruvarur-610001.</List>
+          <Typography variant="h6" className="footer-list">Address:</Typography>
+          <Typography variant="h6" className="footer-list">Naalukal Mandabam Near,<br /> Mayiladuthurai Main Road,<br /> Thiruvarur-610001.</Typography>
           <Link href="tel:+9865161714" className="contact-link">Contact: +919865161714,<br /> +919865161716.</Link>
         </Box>
       </Box>

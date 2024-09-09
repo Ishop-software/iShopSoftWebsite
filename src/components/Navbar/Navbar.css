@@ -1,6 +1,8 @@
 .appbar {
     background-color: #35AFFD!important;
     color: #FFFFFF;
+    display: flex!important;
+    flex-direction: row!important;
 }
 
 .app-box {
@@ -28,6 +30,10 @@
 }
 
 @media (max-width: 600px) {
+    .MuiIconButton-root {
+        width: 100px!important;
+    }
+    
     .content {
         margin-top: -60px;
     }
