@@ -106,6 +106,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    #services {
+        padding: 0px!important;
+    }
     .services-container {
         flex-direction: column;
 
