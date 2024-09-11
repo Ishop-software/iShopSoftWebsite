@@ -5,7 +5,8 @@ import { Box, List, Typography } from '@mui/material';
 // import twiter from "../../Assets/SocialmediaImages/twiter.png";
 import whatsapp from "../../Assets/SocialmediaImages/whatsapp.png";
 import gmail from "../../Assets/SocialmediaImages/gmail.png";
-import { Link } from 'react-scroll';
+import MuiLink from '@mui/material/Link'; 
+import { Link as ScrollLink } from 'react-scroll';
 
 function Footer() {
   return (
@@ -25,24 +26,24 @@ function Footer() {
             <img src={twiter} alt="" className="media-images" />
             */}
             <Box className="mail-logo">
-              <Link href="mailto:ishoptvr@example.com">
+              <MuiLink href="mailto:ishoptvr@example.com">
                 <img src={gmail} alt=""  className="media-images" />
-              </Link>
+              </MuiLink>
             </Box>
             <Box className="whatsapp-logo">
-              <Link href="https://wa.me/+919865161714" target="_blank" rel="noopener noreferrer" sx={{ textDecoration: 'none', color: '#fff' }} >
+              <MuiLink href="https://wa.me/+919865161714" target="_blank" rel="noopener noreferrer" sx={{ textDecoration: 'none', color: '#fff' }} >
                 <img src={whatsapp} alt="" className="media-images" />
-              </Link>
+              </MuiLink>
             </Box>
           </Box>
         </Box>
         <Box className="our-pages">
           <Typography className="footer-title" variant="h5">Quick Links</Typography>
-          <Typography variant="h6"><Link to="home" smooth={true} duration={500} className="footer-links">Home</Link></Typography>
-          <Typography variant="h6"><Link to="about" smooth={true} duration={500} className="footer-links">About</Link></Typography>
-          <Typography variant="h6"><Link to="services" smooth={true} duration={500} className="footer-links">Services</Link></Typography>
-          <Typography variant="h6"><Link to="portfolio" smooth={true} duration={500} className="footer-links">Portfolio</Link></Typography>
-          <Typography variant="h6"><Link to="contact" smooth={true} duration={500} className="footer-links">ContactUs</Link></Typography>
+          <Typography variant="h6"><ScrollLink to="home" smooth={true} duration={500} className="footer-links">Home</ScrollLink></Typography>
+          <Typography variant="h6"><ScrollLink to="about" smooth={true} duration={500} className="footer-links">About</ScrollLink></Typography>
+          <Typography variant="h6"><ScrollLink to="services" smooth={true} duration={500} className="footer-links">Services</ScrollLink></Typography>
+          <Typography variant="h6"><ScrollLink to="portfolio" smooth={true} duration={500} className="footer-links">Portfolio</ScrollLink></Typography>
+          <Typography variant="h6"><ScrollLink to="contact" smooth={true} duration={500} className="footer-links">ContactUs</ScrollLink></Typography>
         </Box>
         <Box className="service-section">
           <Typography className="footer-title" variant="h5">Our Services</Typography>
@@ -55,7 +56,7 @@ function Footer() {
           <Typography className="footer-title" variant="h5">Location</Typography>
           <Typography variant="h6" className="footer-list">Address:</Typography>
           <Typography variant="h6" className="footer-list">Naalukal Mandabam Near,<br /> Mayiladuthurai Main Road,<br /> Thiruvarur-610001.</Typography>
-          <Link href="tel:+9865161714" className="contact-link">Contact: +919865161714,<br /> +919865161716.</Link>
+          <MuiLink href="tel:+9865161714" className="contact-link">Contact: +919865161714,<br /> +919865161716.</MuiLink>
         </Box>
       </Box>
       <Box className="copyright-section">

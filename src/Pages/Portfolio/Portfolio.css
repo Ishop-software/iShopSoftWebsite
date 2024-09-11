@@ -1,3 +1,6 @@
+#portfolio-section {
+  min-height: 0vh!important;
+}
 .portfolio-container {
   width: 1311px;
   background-color: #abd1e9;
