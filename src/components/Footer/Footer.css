@@ -95,8 +95,8 @@
 }
 
 /* Tablet view (up to 1024px) */
-@media (max-width: 1024px) {
-    #footer-section {
+/* @media (max-width: 1024px) {
+    .footer-section {
         min-height: 0px!important;
     }
     .footer-container {
@@ -128,18 +128,43 @@
     .copyright-text {
         font-size: 10px!important;
     }
-}
+} */
 
-@media (max-width: 768px) {
-    #footer-section {
-        min-height: 0px!important;
-    }
+@media (min-width: 1025px) and (max-width: 1280px) {
     .footer-container {
-        width: 730px!important;
+        width: 100%!important;
         flex-direction: column;
         column-count: 1;
         align-items: center;
         padding: 20px;
+    }
+    .footer-title {
+        text-align: center;
+    }
+    .footer-para {
+        text-align: center;
+    }
+    .our-pages {
+        text-align: center;
+    }
+    .service-section {
+        text-align: center;
+    }
+    .address-section {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-section {
+        min-height: 0px!important;
+    }
+    .footer-container {
+        width: 100%!important;
+        flex-direction: column;
+        column-count: 1;
+        align-items: center;
+        /* padding: 20px; */
     }
 
     .logo-section,
@@ -171,14 +196,14 @@
 }
 
 
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .footer-container {
-        width: 350px!important;
+        width: 100%!important;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 15px;
+        /* padding: 15px; */
     }
 
     .logo-section,
@@ -191,12 +216,68 @@
     .media-images {
         width: 35px;
     }
+    
+    .company-info {
+        text-align: center;
+    }
+    
+    .footer-title {
+        text-align: center;
+    }
 
+    .our-pages {
+        text-align: center;
+    }
+
+    .footer-list {
+        text-align: center;
+    }
     .footer-para {
         font-size: 16px;
     }
 
+    .address-section {
+        text-align: center;
+    }
+
     .copyright-text {
         font-size: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 599px) {
+    .contact-card {
+        width: 450px;
+    }
+    .footer-container {
+        width: 100%!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        padding: 15px;
+    }
+
+    .company-info {
+        text-align: center;
+    }
+    
+    .footer-title {
+        text-align: center;
+    }
+
+    .our-pages {
+        text-align: center;
+    }
+
+    .footer-list {
+        text-align: center;
+    }
+    .footer-para {
+        font-size: 16px;
+    }
+
+    .address-section {
+        text-align: center;
     }
 }

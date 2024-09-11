@@ -3,6 +3,10 @@
 
 }
 
+#services-section {
+    min-height: 0vh!important;
+}
+
 .services-container {
     display: flex;
     flex-wrap: wrap;

@@ -17,12 +17,12 @@ const portfolioList = [
     {
         image: webApplication,
         title: "Web Applications",
-        para: "Our expert team of developers leverages the latest technologies to build secure, high-performance applications that drive business growth. Whether you're looking to develop a custom solution from scratch or enhance an existing platform, we ensure a seamless & user-friendly experience across all devices."
+        para: "We creating robust, scalable & intuitive web applications expert team of developers leverages the latest technologies to build secure, high-performance. You're looking to develop a custom solution from scratch or enhance an existing platform, we ensure a seamless & user-friendly experience across all devices."
     },
     {
         image: systemSoftware,
         title: "System Software",
-        para: "Our comprehensive system software solutions are designed to enhance the performance, security, and scalability of your IT infrastructure. We specialize in developing and integrating system software that forms the backbone of your computing environment, including operating systems, device drivers, utility programs and more."
+        para: "System software solutions are designed to enhance the performance, security, and scalability of your IT infrastructure. We specialize in developing and integrating system software that forms the backbone of your computing environment, including operating systems, device drivers, utility programs and more."
     },
     {
         image: mobileDesign,
