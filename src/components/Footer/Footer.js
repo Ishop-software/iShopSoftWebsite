@@ -46,7 +46,7 @@ function Footer() {
           <Typography variant="h6"><ScrollLink to="contact" smooth={true} duration={500} className="footer-links">ContactUs</ScrollLink></Typography>
         </Box>
         <Box className="service-section">
-          <Typography className="footer-title" variant="h5">Our Services</Typography>
+          <Typography className="footer-title" variant="h5">Services</Typography>
           <Typography variant="h6" className="footer-list">Web Design</Typography>
           <Typography variant="h6" className="footer-list">Digital Marketting</Typography>
           <Typography variant="h6" className="footer-list">Web Development</Typography>
@@ -55,7 +55,7 @@ function Footer() {
         <Box className="address-section">
           <Typography className="footer-title" variant="h5">Location</Typography>
           <Typography variant="h6" className="footer-list">Address:</Typography>
-          <Typography variant="h6" className="footer-list">Naalukal Mandabam Near,<br /> Mayiladuthurai Main Road,<br /> Thiruvarur-610001.</Typography>
+          <Typography variant="h6" className="footer-list">Naalukal Mandabam Near, Mayiladuthurai Main Road, Thiruvarur-610001.</Typography>
           <MuiLink href="tel:+9865161714" className="contact-link">Contact: +919865161714,<br /> +919865161716.</MuiLink>
         </Box>
       </Box>

@@ -139,19 +139,44 @@
         padding: 20px;
     }
     .footer-title {
-        text-align: center;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: row;
+        font-size: 19px!important;
+        font-weight: 900!important;
+        align-items: center!important;
+        justify-content: space-evenly!important;
     }
-    .footer-para {
-        text-align: center;
-    }
+
     .our-pages {
         text-align: center;
     }
-    .service-section {
+
+    .footer-list {
         text-align: center;
+        font-size: 12px!important;
+        font-weight: 900!important;
     }
+    .footer-para {
+        font-size: 16px;
+    }
+
+    .footer-links {
+        font-size: 12px!important;
+        font-weight: 900!important;
+    }
+
     .address-section {
         text-align: center;
+    }
+    
+    .contact-link {
+        font-size: 12px!important;
+        font-weight: 900!important;
+    }
+
+    .copyright-text {
+        font-size: 10px;
     }
 }
 
@@ -186,15 +211,106 @@
         margin: 0 10px;
     }
 
+    .footer-title {
+        /* text-align: center; */
+        display: flex;
+        flex-direction: row;
+        font-size: 19px!important;
+        font-weight: 900!important;
+        align-items: center!important;
+        justify-content: space-evenly!important;
+    }
+
+    .our-pages {
+        text-align: center;
+    }
+
+    .footer-list {
+        text-align: center;
+        font-size: 12px!important;
+        font-weight: 900!important;
+    }
     .footer-para {
-        font-size: 12px;
+        font-size: 16px;
+    }
+
+    .footer-links {
+        font-size: 20px!important;
+        /* font-weight: 600!important; */
+    }
+
+    .address-section {
+        text-align: center;
+    }
+    
+    .contact-link {
+        font-size: 12px!important;
+        font-weight: 900!important;
     }
 
     .copyright-text {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
+@media (min-width: 481px) and (max-width: 599px) {
+    .contact-card {
+        width: 100%!important;
+    }
+    .footer-container {
+        width: 100%!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        padding: 15px;
+    }
+
+    .company-info {
+        text-align: center;
+    }
+    
+    .footer-title {
+        /* text-align: center; */
+        display: flex;
+        flex-direction: row;
+        font-size: 19px!important;
+        font-weight: 900!important;
+        align-items: center!important;
+        justify-content: space-evenly!important;
+    }
+
+    .our-pages {
+        text-align: center;
+    }
+
+    .footer-list {
+        text-align: center;
+        font-size: 12px!important;
+        font-weight: 900!important;
+    }
+    .footer-para {
+        font-size: 16px;
+    }
+
+    .footer-links {
+        font-size: 12px!important;
+        font-weight: 900!important;
+    }
+
+    .address-section {
+        text-align: center;
+    }
+    
+    .contact-link {
+        font-size: 12px!important;
+        font-weight: 900!important;
+    }
+
+    .copyright-text {
+        font-size: 10px;
+    }
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
     .footer-container {
@@ -222,7 +338,13 @@
     }
     
     .footer-title {
-        text-align: center;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: row;
+        font-size: 19px!important;
+        font-weight: 900!important;
+        align-items: center!important;
+        justify-content: space-evenly!important;
     }
 
     .our-pages {
@@ -231,13 +353,25 @@
 
     .footer-list {
         text-align: center;
+        font-size: 12px!important;
+        font-weight: 900!important;
     }
     .footer-para {
         font-size: 16px;
     }
 
+    .footer-links {
+        font-size: 12px!important;
+        font-weight: 900!important;
+    }
+
     .address-section {
         text-align: center;
+    }
+
+    .contact-link {
+        font-size: 12px!important;
+        font-weight: 900!important;
     }
 
     .copyright-text {
@@ -245,17 +379,16 @@
     }
 }
 
-@media (min-width: 481px) and (max-width: 599px) {
+@media (min-width: 280px) and (max-width: 320px) {
     .contact-card {
-        width: 450px;
+        width: 200px!important;
     }
     .footer-container {
         width: 100%!important;
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: center; */
-        padding: 15px;
+        justify-content: center;
     }
 
     .company-info {
@@ -264,6 +397,7 @@
     
     .footer-title {
         text-align: center;
+        /* font-size: 18px!important; */
     }
 
     .our-pages {
@@ -277,7 +411,16 @@
         font-size: 16px;
     }
 
+    .footer-links {
+        font-size: 12px!important;
+        font-weight: 900!important;
+    }
+
     .address-section {
         text-align: center;
+    }
+
+    .copyright-text {
+        font-size: 10px;
     }
 }
