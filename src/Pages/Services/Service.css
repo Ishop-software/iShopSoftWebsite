@@ -109,6 +109,9 @@
     #services {
         padding: 0px!important;
     }
+    .service-heading {
+        padding: 30px;
+    }
     .services-container {
         flex-direction: column;
 

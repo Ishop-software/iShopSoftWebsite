@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Footer.css";
-import { Box, List, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 // import insta from "../../Assets/SocialmediaImages/insta.png";
 // import twiter from "../../Assets/SocialmediaImages/twiter.png";
 import whatsapp from "../../Assets/SocialmediaImages/whatsapp.png";
@@ -56,7 +56,9 @@ function Footer() {
           <Typography className="footer-title" variant="h5">Location</Typography>
           <Typography variant="h6" className="footer-list">Address:</Typography>
           <Typography variant="h6" className="footer-list">Naalukal Mandabam Near, Mayiladuthurai Main Road, Thiruvarur-610001.</Typography>
-          <MuiLink href="tel:+9865161714" className="contact-link">Contact: +919865161714,<br /> +919865161716.</MuiLink>
+          <Typography variant="h6" className="footer-list">Contact:</Typography>
+          <MuiLink variant="h6" href="tel:+9865161714" className="contact-link">+919865161714</MuiLink>
+          <MuiLink variant="h6" href="tel:+919865161716" className="contact-link">+919865161716.</MuiLink>
         </Box>
       </Box>
       <Box className="copyright-section">
