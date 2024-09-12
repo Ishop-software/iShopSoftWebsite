@@ -58,6 +58,12 @@
   }
 }
 
+@media (min-width: 1025px) and (max-width: 2500px) {
+  #portfolio-section {
+      min-height: 0vh!important;
+  }
+}
+
 /* Tablet view (up to 1024px) */
 @media (max-width: 1024px) {
   #portfolio-section {

@@ -47,19 +47,14 @@ function Service() {
 
   return (
     <div className='main' style={{ padding: "50px" }} id='services'>
-      <Typography variant='h4' style={{ fontWeight: "bold", textAlign: "center", color: "white", }}>What We Do ?</Typography>
+      <Typography variant='h4' className="service-heading" style={{ fontWeight: "bold", textAlign: "center", color: "white", }}>What We Do ?</Typography>
       <div className="services-container" >
-
         {services.map((service, index) => (
           <ServiceCard className="service" key={index} image={service.image} title={service.title} description={service.description} />
         ))}
-
       </div>
     </div >
-
-
-
   );
 }
 
-export default Service
+export default Service;
