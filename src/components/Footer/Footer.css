@@ -138,12 +138,12 @@
 } */
 
 @media (min-width: 1025px) and (max-width: 2500px) {
-    #portfolio-section {
+    /* #portfolio-section {
         min-height: 0vh!important;
     }
     .portfolio-container {
         width: 100%;
-    }
+    } */
     .footer-container {
         width: 100%!important;
         flex-direction: row;
